@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penyimpanan Akun Pribadi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="initializeApp()">
+    <div class="container py-5" id="login-container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow-lg p-4">
+                    <div class="card-body text-center">
+                        <h3 class="card-title text-primary mb-4">Penyimpanan Akun Pribadi</h3>
+                        <form id="login-form">
+                            <div class="mb-3 position-relative">
+                                <label for="username" class="form-label">Username</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="username" required>
+                                    <button class="btn btn-outline-secondary toggle-visibility" type="button"><i
+                                            class="fa fa-eye"></i></button>
+                                </div>
+                            </div>
+                            <div class="mb-3 position-relative">
+                                <label for="password" class="form-label">Password</label>
+                                <div class="input-group">
+                                    <input type="password" class="form-control" id="password" required>
+                                    <button class="btn btn-outline-secondary toggle-visibility" type="button"><i
+                                            class="fa fa-eye"></i></button>
+                                </div>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary">Login</button>
+                            </div>
+                        </form>
+                        <div id="login-error" class="text-danger mt-3 d-none">Username atau password salah!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-5 d-none" id="account-container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h3 class="text-primary">Daftar Akun</h3>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="dark-mode-toggle">
+                        <label class="form-check-label" for="dark-mode-toggle">Dark Mode</label>
+                    </div>
+                </div>
+                <form id="search-form" class="input-group mb-4">
+                    <input type="text" id="search-input" class="form-control" placeholder="Cari akun...">
+                    <button class="btn btn-primary" type="button" id="search-button">Cari</button>
+                </form>
+                <div class="card shadow-lg p-4">
+                    <div class="card-body">
+                        <form id="account-form">
+                            <div class="mb-3">
+                                <label for="account-category" class="form-label">Kategori Akun</label>
+                                <select class="form-select" id="account-category">
+                                    <option value="Google">Google</option>
+                                    <option value="Facebook">Facebook</option>
+                                    <option value="YouTube">YouTube</option>
+                                    <option value="Other">Lainnya</option>
+                                </select>
+                                <input type="text" class="form-control mt-2 d-none" id="custom-category"
+                                    placeholder="Masukkan kategori lainnya...">
+                            </div>
+                            <div class="mb-3 position-relative">
+                                <label for="account-username" class="form-label">Username</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="account-username" required>
+                                    <button class="btn btn-outline-secondary toggle-visibility" type="button"><i
+                                            class="fa fa-eye"></i></button>
+                                </div>
+                            </div>
+                            <div class="mb-3 position-relative">
+                                <label for="account-password" class="form-label">Kata Sandi</label>
+                                <div class="input-group">
+                                    <input type="password" class="form-control" id="account-password" required>
+                                    <button class="btn btn-outline-secondary toggle-visibility" type="button"><i
+                                            class="fa fa-eye"></i></button>
+                                </div>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-success">Tambah Akun</button>
+                            </div>
+                        </form>
+
+                        <div id="account-list" class="mt-4 d-flex flex-wrap justify-content-start">
+                            <!-- Daftar akun akan ditampilkan di sini -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

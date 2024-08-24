@@ -1,0 +1,117 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.card {
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #333333;
+    border: 1px solid #ddd;
+    /* Garis abu-abu halus */
+    width: 100%;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+.form-control {
+    background-color: #ffffff;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-primary,
+.btn-success,
+.btn-secondary {
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover,
+.btn-success:hover,
+.btn-secondary:hover {
+    background-color: #0056b3;
+}
+
+.position-relative .icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #007bff;
+}
+
+.toggle-visibility {
+    border: none;
+    background: none;
+    color: #007bff;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #f8f9fa;
+}
+
+.dark-mode .card {
+    background-color: #444;
+    color: #f8f9fa;
+    border-color: #555;
+}
+
+.dark-mode .form-control {
+    background-color: #555;
+    color: #f8f9fa;
+    border-color: #666;
+}
+
+.dark-mode .btn-primary,
+.dark-mode .btn-success,
+.dark-mode .btn-secondary {
+    color: #f8f9fa;
+    background-color: #0056b3;
+}
+
+#account-list .card {
+    margin-bottom: 15px;
+}
+
+#account-list .card-body {
+    position: relative;
+    padding: 15px;
+}
+
+#account-list .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #007bff;
+}
+
+.delete-account-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #dc3545;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    #account-list .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    #account-list .card {
+        width: 100%;
+    }
+}
