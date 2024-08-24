@@ -115,3 +115,26 @@ body {
         width: 100%;
     }
 }
+
+.footer {
+    background-color: #f8f9fa; /* Warna latar belakang footer */
+    border-top: 1px solid #ddd; /* Garis atas footer */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer .text-muted {
+    color: #6c757d; /* Warna teks footer */
+}
+
+.dark-mode .footer {
+    background-color: #333;
+    border-top-color: #555;
+}
+
+.dark-mode .footer .text-muted {
+    color: #adb5bd;
+}
