@@ -117,8 +117,10 @@ body {
 }
 
 .footer {
-    background-color: #f8f9fa; /* Warna latar belakang footer */
-    border-top: 1px solid #ddd; /* Garis atas footer */
+    background-color: #f8f9fa;
+    /* Warna latar belakang footer */
+    border-top: 1px solid #ddd;
+    /* Garis atas footer */
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -127,7 +129,8 @@ body {
 }
 
 .footer .text-muted {
-    color: #6c757d; /* Warna teks footer */
+    color: #6c757d;
+    /* Warna teks footer normal */
 }
 
 .dark-mode .footer {
@@ -136,5 +139,6 @@ body {
 }
 
 .dark-mode .footer .text-muted {
-    color: #adb5bd;
+    color: #ffffff !important;
+    /* Warna teks footer menjadi putih saat dark mode dengan !important */
 }
