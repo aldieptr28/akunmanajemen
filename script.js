@@ -20,7 +20,7 @@ document.getElementById('login-form').addEventListener('submit', function (e) {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
-    if (username === "admin" && password === "password123") {
+    if (username === "admin" && password === "ptr1") {
         document.getElementById('login-container').classList.add('d-none');
         document.getElementById('account-container').classList.remove('d-none');
         loadAccounts();
